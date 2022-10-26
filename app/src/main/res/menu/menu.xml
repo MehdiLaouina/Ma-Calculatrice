@@ -4,13 +4,13 @@
 
     <item
         android:id="@+id/standard"
-        android:title="Standard" />
+        android:title="@string/option1" />
     <item android:id="@+id/scientific"
-    android:title="Scientific" />
-    <item android:id="@+id/proggrammer"
-        android:title="Programmer" />
+    android:title="@string/option2" />
+    <item android:id="@+id/programmer"
+        android:title="@string/option3" />
     <item android:id="@+id/currency"
-    android:title="Currency" />
+    android:title="@string/option4" />
 
 
 </menu>

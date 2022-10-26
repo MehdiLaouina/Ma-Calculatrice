@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ma Calculatrice</string>
+    <string name="option1">Standard</string>
+    <string name="option2">Scientific</string>
+    <string name="option3">Programmer</string>
+    <string name="option4">Currency</string>
 </resources>
