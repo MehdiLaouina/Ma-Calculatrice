@@ -3,11 +3,15 @@ package com.example.ma_calculatrice;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.view.MenuItem.OnMenuItemClickListener;
+import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
 import org.mozilla.javascript.Context;
@@ -63,6 +67,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
         return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.scientific) {
+            Toast.makeText(this, "Scientific", Toast.LENGTH_SHORT).show();
+            Intent intent1 = new Intent(this,MainActivityScientific.class);
+            this.startActivity(intent1);
+            finish();
+            return true;
+        }
+
+        if (id == R.id.converting) {
+            Toast.makeText(this, "Convertor", Toast.LENGTH_SHORT).show();
+            Intent intent1 = new Intent(this,MainActivityConversion.class);
+            this.startActivity(intent1);
+            finish();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     void assignId(MaterialButton btn,int id){

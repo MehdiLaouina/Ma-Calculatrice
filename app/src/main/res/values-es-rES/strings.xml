@@ -3,6 +3,6 @@
     <string name="app_name">Mi Claculadora</string>
     <string name="option1">estándar</string>
     <string name="option2">científica</string>
-    <string name="option3">Programadora</string>
+    <string name="option3">Conversion</string>
     <string name="option4">Divisa</string>
 </resources>

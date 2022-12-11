@@ -7,8 +7,8 @@
         android:title="@string/option1" />
     <item android:id="@+id/scientific"
     android:title="@string/option2" />
-    <item android:id="@+id/programmer"
-        android:title="@string/option3" />
+    <item android:id="@+id/converting"
+        android:title="@string/option3"/>
     <item android:id="@+id/currency"
     android:title="@string/option4" />
 
